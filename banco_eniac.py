@@ -15,7 +15,7 @@ cursor.execute('CREATE TABLE IF NOT EXISTS Autor(id_autor INTEGER PRIMARY KEY,FO
 cursor.execute('CREATE TABLE IF NOT EXISTS Usuario(id_usuario INTEGER PRIMARY KEY,telefone VARCHAR(100),nacionalidade VARCHAR(100),FOREIGN KEY(id_usuario) REFERENCES Pessoa (id_pessoa))')
 
 #tabela Livro
-cursor.execute('CREATE TABLE IF NOT EXISTS Livro(id_livro INTEGER PRIMARY KEY AUTOINCREMENT,titulo VARCHAR(100) NOT NULL,editora VARCHAR(100),max_renovacoes INTEGER)')
+cursor.execute('CREATE TABLE IF NOT EXISTS Livro(id_livro INTEGER PRIMARY KEY AUTOINCREMENT,titulo VARCHAR(100) NOT NULL,editora VARCHAR(100),max_renovacoes INTEGER DEFAULT 3)')
 
 #tabela Gênero
 cursor.execute('CREATE TABLE IF NOT EXISTS Genero(id_genero INTEGER PRIMARY KEY AUTOINCREMENT,genero VARCHAR(100) NOT NULL)')
