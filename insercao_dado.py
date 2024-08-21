@@ -1,9 +1,11 @@
 import sqlite3
+import registros
 
 conexao = sqlite3.connect('banco_eniac')
 cursor = conexao.cursor()
 
 cursor.execute('PRAGMA foreign_keys = ON;')
+
 
 # Inserindo dados tabela pessoa
 # Pessoa(id_pessoa INTEGER PRIMARY KEY AUTOINCREMENT,nome VARCHAR(100) NOT NULL)')
@@ -61,6 +63,33 @@ cursor.execute('PRAGMA foreign_keys = ON;')
 # cursor.execute('INSERT INTO Genero(genero) VALUES("Aventura")')
 # cursor.execute('INSERT INTO Genero(genero) VALUES("Terror")')
 # cursor.execute('INSERT INTO Genero(genero) VALUES("Autoajuda")')
+
+
+# Inserindo registros de autores na tabela Pessoa
+"""cursor.executemany('INSERT INTO Pessoa (nome) VALUES (?)', registros.pessoas_autores)"""
+
+# Inserindo registros  na tabela Autor
+"""cursor.executemany('INSERT INTO Autor (id_autor) VALUES (?)', registros.autores)"""
+
+# Inserindo  registros na tabela Exemplar
+"""cursor.executemany('''
+    INSERT INTO Exemplar (id_livro, disponivel, num_atual_renovacoes) 
+    VALUES (?, ?, ?)''', registros.exemplares)"""
+
+# Inserindo registros na tabela  Emprestimo
+"""cursor.executemany('''
+INSERT INTO Emprestimo (id_exemplar, id_usuario, data_emprestimo, data_devolucao, status)
+VALUES (?, ?, ?, ?, ?)''', registros.emprestimos)"""
+
+# Inserindo registros na tabela Livro_Autor
+"""cursor.executemany('''
+INSERT INTO Livro_Autor (id_livro, id_autor)
+VALUES (?, ?)''', registros.livro_autor)"""
+
+# Inserindo registros na tabele Livro_Gênero
+cursor.executemany('''
+INSERT INTO Livro_Genero (id_livro, id_genero)
+VALUES (?, ?)''', registros.livro_genero)
 
 
 conexao.commit()
