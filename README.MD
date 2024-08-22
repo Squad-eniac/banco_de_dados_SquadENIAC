@@ -28,6 +28,9 @@ Este desafio abrange conceitos fundamentais de Banco de Dados, como criação de
 - 4️⃣. Atualizações e Exclusões:
     - Escreva consultas SQL para atualizar e excluir registros do banco de dados, por exemplo, para marcar um livro como devolvido ou remover um autor
 
+![modelagem](banco_eniac.png)
+
+
 ## 👥 SQUAD ENIAC - Integrantes 
 
 - Ana Julia Rauber - [GitHub](https://github.com/anajuliarauber) - [Likedin](https://www.linkedin.com/in/ana-julia-rauber/);
