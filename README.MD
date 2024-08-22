@@ -42,3 +42,11 @@ Este desafio abrange conceitos fundamentais de Banco de Dados, como criação de
 
 ### 🤝 Divisão das Tarefas
 
+- A divisão foi realizada de forma que cada etapa fosse concluída antes do início da etapa seguinte.
+- Dessa forma, as meninas com mais disponibilidade de tempo no início do projeto começaram pela primeira etapa, e assim por diante.
+- Dividimos uma etapa para duas meninas.
+
+- 1️⃣. Criação das Tabelas: Carol e Marina
+- 2️⃣. Inserção de Dados: Angelica e Fabiana
+- 3️⃣. Consultas SQL: Rosana e
+- 4️⃣. Atualizações e Exclusões:
