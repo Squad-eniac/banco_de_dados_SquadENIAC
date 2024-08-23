@@ -50,4 +50,4 @@ A divisão foi realizada de forma que cada etapa fosse concluída antes do iníc
 - 1️⃣. Criação das Tabelas: Carol e Marina
 - 2️⃣. Inserção de Dados: Angelica e Fabiana
 - 3️⃣. Consultas SQL: Rosana e
-- 4️⃣. Atualizações e Exclusões: Kassia e
+- 4️⃣. Atualizações e Exclusões: Kassia e Ana Julia
