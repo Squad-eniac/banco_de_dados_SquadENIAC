@@ -1,5 +1,6 @@
 import sqlite3
 
+# função para listar todos os livros na biblioteca, independente de cópias disponíveis ou não
 def listar_livros_disponiveis():
     conexao = sqlite3.connect('banco_eniac')
     cursor = conexao.cursor()
@@ -16,6 +17,7 @@ def listar_livros_disponiveis():
 
     return livros_disponiveis
 
+#  função para listar todos os livros emprestados
 def encontrar_livros_emprestados():
     conexao = sqlite3.connect('banco_eniac')
     cursor = conexao.cursor()
@@ -33,6 +35,7 @@ def encontrar_livros_emprestados():
 
     return livros_emprestados
 
+# função para listar todos os livros de um autor específico
 def localizar_livros_por_autor(nome_autor):
     conexao = sqlite3.connect('banco_eniac')
     cursor = conexao.cursor()
@@ -51,6 +54,7 @@ def localizar_livros_por_autor(nome_autor):
 
     return livros_por_autor
 
+# função para contar quantas cópias de um livro específico
 def verificar_copias_disponiveis(titulo_livro):
     conexao = sqlite3.connect('banco_eniac')
     cursor = conexao.cursor()
@@ -72,6 +76,7 @@ def verificar_copias_disponiveis(titulo_livro):
     else:
         return None 
 
+# função para listar os empréstimos atrasados
 def mostrar_emprestimos_em_atraso():
     conexao = sqlite3.connect('banco_eniac')
     cursor = conexao.cursor()
